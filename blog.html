@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glanda Physiotherapy Vlog – Exercise demonstrations, rehabilitation tips, clinic updates and professional physiotherapy care.">
+    <meta name="keywords" content="Physiotherapy, Glanda Physio, Rehab exercises, Physical therapy vlog, Clinic videos">
+    <meta name="author" content="Glanda Physiotherapy Clinic">
+    <title>Glanda Physio | Vlog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f8fb;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #1f3c88;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        nav ul li a:hover {
+            color: #aad6ff;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* PAGE HEADER */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeDown 1s ease;
+        }
+
+        .page-header h1 {
+            color: #1f3c88;
+            font-size: 32px;
+        }
+
+        .page-header p {
+            max-width: 720px;
+            margin: 10px auto;
+            color: #555;
+        }
+
+        /* VLOG GRID */
+        .vlog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .vlog-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeUp 1s ease;
+        }
+
+        .vlog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+
+        .vlog-media video,
+        .vlog-media img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .vlog-content {
+            padding: 20px;
+        }
+
+        .vlog-content h3 {
+            color: #1f3c88;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .vlog-content p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .vlog-tag {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            nav ul {
+                position: absolute;
+                top: 65px;
+                right: 0;
+                background: #1f3c88;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                padding: 15px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">                        <a href="index.html"><img src="IMAGE/Pone.jpg"></a>
+        
+        </div>
+
+        <nav>
+                    
+            <ul id="nav-links">
+                <li><a href="home1.html"><i class="fa fa-house"></i> Home</a></li>
+                <li><a href="about1.html"><i class="fa fa-user-doctor"></i> About</a></li>
+                <li><a href="sevice1.html"><i class="fa fa-notes-medical"></i> Services</a></li>
+                <li><a href="vlog.html"><i class="fa fa-video"></i> Vlog</a></li>
+                <li><a href="contact1.html"><i class="fa fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<body>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(120deg, #e84c7f, #6fa8ff);
+        color: #333;
+    }
+
+    .blog-container {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    .blog-title {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .blog-title h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .blog-title p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .blog-card {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .blog-content {
+        padding: 20px;
+    }
+
+    .blog-content h3 {
+        margin: 0 0 10px;
+        color: #e84c7f;
+    }
+
+    .blog-content p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .read-more {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #6fa8ff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+
+    .read-more:hover {
+        background: #e84c7f;
+    }
+</style>
+
+<div class="blog-container">
+
+    <div class="blog-title">
+        <h1>Our Blog</h1>
+        <p>Expert tips, recovery stories, and physiotherapy insights</p>
+    </div>
+
+    <div class="blog-grid">
+
+        <div class="blog-card">
+            <img src="IMAGE/Ptwo.jpg" alt="Physiotherapy session">
+            <div class="blog-content">
+                <h3>Pain Relief Through Physiotherapy</h3>
+                <p>Learn how physiotherapy helps manage chronic pain and improves quality of life.</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="IMAGE/p4.jpg" alt="Rehabilitation exercise">
+            <div class="blog-content">
+                <h3>Rehabilitation After Injury</h3>
+                <p>Steps and exercises that promote safe recovery after sports or work injuries.</p>
+               
+            </div>
+        </div>
+                <div class="blog-card">
+            <img src="IMAGE/p4.jpg" alt="Rehabilitation exercise">
+            <div class="blog-content">
+                <h3>Rehabilitation After Injury</h3>
+                <p>Steps and exercises that promote safe recovery after sports or work injuries.</p>
+               
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="IMAGE/p6.jpg" alt="Stretching exercises">
+            <div class="blog-content">
+                <h3>Daily Stretching Benefits</h3>
+                <p>Simple stretches you can do every day to maintain flexibility and mobility.</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="IMAGE/Ptwo.jpg" alt="Posture correction">
+            <div class="blog-content">
+                <h3>Correcting Poor Posture</h3>
+                <p>Understand the impact of posture on your spine and how to fix it.</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="IMAGE/pv1.jpeg" alt="Wellness and recovery">
+            <div class="blog-content">
+                <h3>Long-Term Wellness Care</h3>
+                <p>Why physiotherapy is key to maintaining long-term health and recovery.</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+   
+
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
