@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 24, 96, 0.7),rgba(6, 24, 96, 0.7)),url(IMAGE/p4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(230, 236, 241);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px soild #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+font-size: 20px;
+}
+.nav-links ul li{
+    display: block;
+ }
+ .nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+ }
+ nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+ }
+ .nav-links ul{
+    padding: 30px;
+ }
+}
+/*-----course----*/
+
+ .services{
+    width: 80;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+ }
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+ }
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.services-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.services-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.moreinfor{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.moreinfo-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.moreinfo-col img{
+    width: 100%;
+}
+.andmore{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.andmore-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.andmore-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.andmore-col p{
+    padding: 0;
+}
+.andmore-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* HERO */
+.services-hero {
+  background: linear-gradient(to right, #003366, #d62828);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* SERVICES GRID */
+.services {
+  padding: 60px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #f5f5f5;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background: #d62828;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #d62828;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.services-hero {
+  background: linear-gradient(to right, #003366, #d62828);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 60px;
+}
+
+/* LOGO INSIDE HERO */
+.hero-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* contact form */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Wrapper */
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #c40000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #c40000;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #a00000;
+}
+
+/* Google Map */
+.map-section {
+    margin-top: 50px;
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.map-section iframe {
+    border-radius: 10px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-text h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #444;
+    line-height: 1.7;
+}
+
+.about-text ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.about-text ul li {
+    color: #444;
+}
+
+.footer {
+            margin-top: 40px;
+            background-color: #0f5da8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+}
+
+/* PHYSIOTHERAPIST SECTION */
+.physio-section {
+    margin-top: 50px;
+}
+
+.physio-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1f3c88;
+}
+
+.physio-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.physio-card img {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.physio-info h3 {
+    color: #1f3c88;
+    margin-bottom: 10px;
+}
+
+.physio-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .physio-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .physio-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* NAVBAR */
+.header {
+    background: rgb(71, 154, 209);
+    padding: 12px 20px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgb(71, 154, 209);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+    
+
+   
+.home-hero-medical {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    background: #F7F3EC;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    color: #0B3C5D;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-visual img {
+    width: 420px;
+    border-radius: 50%;
+}
+
+.btn-primary {
+    background: #C4161C;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.services-preview {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.services-preview h2 {
+    color: #0B3C5D;
+}
+
+.preview-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.preview-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.preview-item i {
+    font-size: 32px;
+    color: #C4161C;
+    margin-bottom: 10px;
+}
+
+.link-more {
+    color: #C4161C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.trust-home {
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+    background: #C4161C;
+    color: white;
+}
+
+.trust-image img {
+    width: 280px;
+}
+
+.trust-text {
+    margin-left: 60px;
+}
+
+.btn-outline-light {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.home-cta-medical {
+    text-align: center;
+    padding: 80px 10%;
+    background: #0B3C5D;
+    color: white;
+}
+
+.cta-details span {
+    display: block;
+    margin: 10px 0;
+}
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+    .home-hero-medical {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 8%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-visual img {
+        width: 260px;
+        margin-top: 30px;
+    }
+
+    /* SERVICES PREVIEW */
+    .preview-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .preview-item {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    /* TRUST SECTION */
+    .trust-home {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 8%;
+    }
+
+    .trust-image img {
+        width: 220px;
+        margin-bottom: 30px;
+    }
+
+    .trust-text {
+        margin-left: 0;
+    }
+
+    /* CTA SECTION */
+    .home-cta-medical {
+        padding: 60px 8%;
+    }
+
+    .home-cta-medical h2 {
+        font-size: 26px;
+    }
+
+    .cta-details span {
+        font-size: 15px;
+    }
+
+    /* BUTTONS */
+    .btn-primary,
+    .btn-outline-light {
+        padding: 12px 26px;
+        font-size: 14px;
+    }
+}
